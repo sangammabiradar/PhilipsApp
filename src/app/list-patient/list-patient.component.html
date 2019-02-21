@@ -1,0 +1,99 @@
+<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+  <a class="navbar-brand" href="#">Philips</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse"
+    aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarCollapse">
+    <ul class="navbar-nav mr-auto">
+      <!-- <li class="nav-item active">
+            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li> -->
+    </ul>
+  </div>
+</nav>
+<div class="container">
+  <h2 class="text-center pt-4"> Patient Details</h2>
+  <button class="btn btn-primary" (click)="addPatient()"> Add Patient</button>
+  <div class="table-responsive mt-4">
+    <table class="table">
+      <thead>
+        <tr>
+          <th scope="col">Id</th>
+          <th scope="col">Name</th>
+          <th scope="col">Age</th>
+          <th scope="col">DOB</th>
+          <th scope="col">Height</th>
+          <th scope="col">Weight</th>
+          <th scope="col">Phone</th>
+          <th scope="col">Email</th>
+          <th scope="col">Address</th>
+          <th scope="col">Edit</th>
+          <th scope="col">Delete</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let patient of patients">
+          <th scope="row">{{patient.id}}</th>
+          <td>{{patient.userName}}</td>
+          <td>{{patient.age}}</td>
+          <td>{{patient.dob}}</td>
+          <td>{{patient.height}}</td>
+          <td>{{patient.weight}}</td>
+          <td>{{patient.phone}}</td>
+          <td>{{patient.email}}</td>
+          <td>{{patient.address}}</td>
+          <td>
+            <button class="btn btn-danger" (click)="editPatient(patient)"> Edit</button>
+          </td>
+          <td>
+            <button class="btn btn-danger" (click)="deletePatient(patient)"> Delete</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <!-- <button class="btn btn-danger" (click)="addPatient()"> Add Patient</button>
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th class="hidden">Id</th>
+        <th>Name</th>
+        <th>Age</th>
+        <th>DOB</th>
+        <th>Height</th>
+        <th>Weight</th>
+        <th>Phone</th>
+        <th>Email</th>
+        <th>Address</th>
+        <th>Edit</th>
+        <th>Delete</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let patient of patients">
+        <td class="hidden">{{patient.id}}</td>
+        <td>{{patient.username}}</td>
+        <td>{{patient.age}}</td>
+        <td>{{patient.dob}}</td>
+        <td>{{patient.height}}</td>
+        <td>{{patient.weight}}</td>
+        <td>{{patient.phone}}</td>
+        <td>{{patient.email}}</td>
+        <td>{{patient.address}}</td>
+        <td>
+          <button class="btn btn-danger" (click)="deletePatient(patient)"> Delete</button>
+          <button class="btn btn-danger" (click)="editPatient(patient)" style="margin-left: 20px;"> Edit</button>
+        </td>
+      </tr>
+    </tbody>
+  </table> -->
+</div>
+<footer>
+  <div class="container">
+    <p class="text-center">Philips-copyright@2019</p>
+  </div>
+</footer>

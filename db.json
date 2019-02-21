@@ -1,0 +1,26 @@
+{
+  "patients": [
+    {
+      "id": "1",
+      "userName": "sampada",
+      "age": "27",
+      "dob": "1990-03-05",
+      "height": "4.8",
+      "weight": "57",
+      "phone": "32453543546",
+      "email": "sampada@gmail.com",
+      "address": "gulbarga"
+    },
+    {
+      "id": "3",
+      "userName": "sumitra",
+      "age": "25",
+      "dob": "1993-03-05",
+      "height": "5.7",
+      "weight": "60",
+      "phone": "7259302661",
+      "email": "sumitra@gmail.com",
+      "address": "belamagi, Bidar"
+    }
+  ]
+}
